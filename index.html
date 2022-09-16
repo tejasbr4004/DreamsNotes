@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Maker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600;800&family=Bree+Serif&family=Pacifico&family=Smooch&family=Tiro+Kannada:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark"
+        style="background-color:purple;box-shadow: 0px 11px 15px 2px #740a74; position: sticky;top: 0%; z-index: 1;">
+        <a class="navbar-brand" href="index.html">DreAms NoTes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active" onmouseover="this.style.backgroundColor='green';"
+                    onmouseout="this.style.backgroundColor='';">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active" onmouseover="this.style.backgroundColor='green';"
+                    onmouseout="this.style.backgroundColor='';">
+                    <a class="nav-link" href="https://en.wikipedia.org/wiki/Note-taking">Help</a>
+                </li>
+                <li class="nav-item active" onmouseout="this.style.backgroundColor='';"
+                    onmouseover="this.style.backgroundColor='green';">
+                    <a class="nav-link" href="https://www.instagram.com/heyy__jass/">ContactUs</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search Title or Notes"
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" id="submit" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container my-3">
+        <h1 class="head">Make Your Dreams Notes</h1>
+        <div class="card">
+
+            <div class="card-body">
+                <div class="form-group">
+                <h5 class="card-title">Add Title</h5>
+                <input type="text" class="form-control" id="addTitle" aria-describedby="title" placeholder="Enter Note Title">
+                </div>
+                <h5 class="card-title">Make Notes</h5>
+                <div class="form-group">
+                    <textarea class="form-control" id="addTxt" rows="3" style="font-family:Times;" placeholder="Type Notes Here"></textarea>
+                </div>
+                <button class="btn btn-primary" id="addBtn">ADD Note</button>
+
+            </div>
+        </div>
+        <hr>
+        <h1 class="headdd">Marked Notes</h1>
+        <hr>
+        <div id="notes" class="row container-fluid">
+
+            <!-- <div class="notecard my-2 mx-2" style="width: 18rem;">
+
+                <div class="card-body">
+                    <h5 class="card-title">Note</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Delete Note</a>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+  
+    <!-- Footer -->
+    <footer class="page-footer" style="color:whitesmoke; background:linear-gradient(rgb(11, 70, 11),rgb(101, 248, 101)); margin-top: 40px;box-shadow: 5px 5px 15px 20px rgb(11, 70, 11);">
+
+      <!-- Footer Elements -->
+      <div class="container" style="height: 200px;width:100%;display:inline;justify-content: center; text-align: center;">
+        <div style="font-family:Times;font-size:large;">
+          I hope You Guys Loved the Note making website 
+        </div>
+        <div style="font-family:Times;font-size:large;">Do add your Dreams Notes Everytime as many as times</div>
+        <div style="font-family:Times;font-size:large;">Visit again and again</div>
+        <div class="greet" style="font-size: 1.7em;font-weight: bold;">Thanks for Visiting Our Site</div>
+      </div>
+      <!-- Footer Elements -->
+    
+      <!-- Copyright -->
+     
+      <div class="footer-copyright text-center py-0" style="background-color: rgb(16, 67, 16);box-shadow: 5px 5px 12px 14px green;"><hr>© 2022 Copyright:
+        <a href="https://www.instagram.com/heyy__jass/">Dreams_Notes.com By Tejas BR</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+  
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
